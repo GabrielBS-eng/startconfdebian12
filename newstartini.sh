@@ -9,7 +9,7 @@ sudo apt upgrade -y
 sudo apt remove gnome-games -y
 sudo apt autoremove -y
 
-sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli
+sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted
 
 # for fun
 sudo apt install -y cmatrix hollywood
@@ -94,4 +94,10 @@ echo "MANAGING DOCKER AS NON-ROOT"
 sudo groupadd docker || true
 sudo usermod -aG docker $USER
 newgrp docker
+#############################################
+
+############ DOCKER INSTALLATION ############
+#echo ""
+#echo "INSTALLING YOCTO BUILD ENVIRONMENT AND TOOLS..."
+#sudo apt install kas
 #############################################
