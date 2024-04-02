@@ -9,7 +9,7 @@ sudo apt upgrade -y
 sudo apt remove gnome-games -y
 sudo apt autoremove -y
 
-sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted
+sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted wget
 
 # for fun
 sudo apt install -y cmatrix hollywood
