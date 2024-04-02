@@ -9,7 +9,7 @@ sudo apt upgrade -y
 sudo apt remove gnome-games -y
 sudo apt autoremove -y
 
-sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted wget
+sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted wget iptables man
 
 # for fun
 sudo apt install -y cmatrix hollywood
@@ -25,6 +25,7 @@ echo "set shiftwidth=4" >> ~/.vimrc
 echo "set expandtab" >> ~/.vimrc
 echo "set autoindent" >> ~/.vimrc
 echo "set hlsearch" >> ~/.vimrc
+echo "set mouse=a" >> ~/.vimrc
 echo "syntax enable" >> ~/.vimrc
 
 # tmux config file
