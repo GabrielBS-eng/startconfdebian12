@@ -24,7 +24,7 @@ echo "set tabstop=4" >> ~/.vimrc
 echo "set shiftwidth=4" >> ~/.vimrc
 echo "set expandtab" >> ~/.vimrc
 echo "set autoindent" >> ~/.vimrc
-echo "set hlsearch" >> ~/.vimrc
+echo "set hls" >> ~/.vimrc
 echo "set mouse=a" >> ~/.vimrc
 echo "syntax enable" >> ~/.vimrc
 
