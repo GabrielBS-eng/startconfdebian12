@@ -9,7 +9,7 @@ sudo apt upgrade -y
 sudo apt remove gnome-games -y
 sudo apt autoremove -y
 
-sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted wget iptables man build-essential gdb
+sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted wget iptables man build-essential gdb ninja-build
 
 # for fun
 sudo apt install -y cmatrix hollywood
@@ -34,6 +34,7 @@ echo "set -g status-fg white" >> ~/.tmux.conf
 echo "set -g window-status-current-style bg=black,fg=white" >> ~/.tmux.conf
 echo "set -g pane-active-border-style fg=blue" >> ~/.tmux.conf
 echo "set -g history-file ~/.tmux_history" >> ~/.tmux.conf
+echo "setw -g mouse on" >> ~/.tmux.conf
 
 # .bashrc extra config
 config_alias="alias ..='cd ..'"
