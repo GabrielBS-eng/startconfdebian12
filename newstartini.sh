@@ -9,7 +9,7 @@ sudo apt upgrade -y
 sudo apt remove gnome-games -y
 sudo apt autoremove -y
 
-sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted wget iptables man build-essential gdb ninja-build
+sudo apt install -y vim tmux python3-pip ncdu htop net-tools cmake ca-certificates curl gnupg tcpdump speedtest-cli gnome-disk-utility gparted wget iptables ufw man build-essential gdb ninja-build neofetch
 
 # for fun
 sudo apt install -y cmatrix hollywood
@@ -37,6 +37,7 @@ echo "set -g history-file ~/.tmux_history" >> ~/.tmux.conf
 echo "setw -g mouse on" >> ~/.tmux.conf
 
 # .bashrc extra config
+HISTTIMEFORMAT="%Y-%m-%d %T " >> ~/.bashrc
 config_alias="alias ..='cd ..'"
 config_path="PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
 grep -qFx "$config_alias" ~/.bashrc && echo "$config_alias already added" || echo "$config_alias" >> ~/.bashrc
