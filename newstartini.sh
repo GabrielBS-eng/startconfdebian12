@@ -37,9 +37,13 @@ echo "set -g history-file ~/.tmux_history" >> ~/.tmux.conf
 echo "setw -g mouse on" >> ~/.tmux.conf
 
 # .bashrc extra config
+config_visual="VISUAL=vim"
+config_editor="EDITOR=vim"
 time_history="HISTTIMEFORMAT='%Y-%m-%d %T '"
 config_alias="alias ..='cd ..'"
 config_path="PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin"
+grep -qFx "$config_visual" ~/.bashrc && echo "$config_visual already added" || echo "$config_visual" >> ~/.bashrc
+grep -qFx "$config_editor" ~/.bashrc && echo "$config_editor already added" || echo "$config_editor" >> ~/.bashrc
 grep -qFx "$time_history" ~/.bashrc && echo "history with time already configured" || echo "$time_history" >> ~/.bashrc
 grep -qFx "$config_alias" ~/.bashrc && echo "$config_alias already added" || echo "$config_alias" >> ~/.bashrc
 grep -qFx "$config_path" ~/.bashrc && echo "PATH already configured" || echo "$config_path" >> ~/.bashrc
