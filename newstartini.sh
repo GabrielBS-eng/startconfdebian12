@@ -25,6 +25,7 @@ echo "set shiftwidth=4" >> ~/.vimrc
 echo "set expandtab" >> ~/.vimrc
 echo "set autoindent" >> ~/.vimrc
 echo "set hls" >> ~/.vimrc
+echo "set incsearch" >> ~/.vimrc
 echo "set mouse=a" >> ~/.vimrc
 echo "syntax enable" >> ~/.vimrc
 echo "syn match matchURL /http[s]\?:\/\/[[:alnum:]%\/_#.-]*/" >> ~/.vimrc # highlight urls in text, and make click enabled to open in the browser
