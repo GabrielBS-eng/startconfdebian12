@@ -31,8 +31,8 @@ echo "syntax enable" >> ~/.vimrc
 echo "syn match matchURL /http[s]\?:\/\/[[:alnum:]%\/_#.-]*/" >> ~/.vimrc # highlight urls in text, and make click enabled to open in the browser
 echo "hi matchURL ctermfg=14" >> ~/.vimrc # highlight urls in text, and make click enabled to open in the browser
 echo -e 'if has("autocmd")' >> ~/.vimrc
-echo -e '    au BufReadPost * if line("'\''\\"") > && line("'\''\\"") <= line("$") | exe "normal! g'\''\\"" | endif'
-echo -e 'endif' # back to last line position saved when reopen the file
+echo -e '    au BufReadPost * if line("'\''\\"") > 0 && line("'\''\\"") <= line("$") | exe "normal! g'\''\\"" | endif' >> ~/.vimrc
+echo -e 'endif' >> ~/.vimrc # back to last line position saved when reopen the file
 
 # tmux config file
 echo "set -g status-bg blue" > ~/.tmux.conf
